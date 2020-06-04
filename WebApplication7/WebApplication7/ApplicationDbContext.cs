@@ -21,5 +21,7 @@ namespace WebApplication7
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<WebApplication7.Models.User> User { get; set; }
+
     }
 }
