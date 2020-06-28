@@ -15,7 +15,7 @@ export default () =>
 <Container >
   <Row className="Row">
     <Col className="Col_text"><h5>Witaj, Budżet studenta to jedyna w swoim rodzaju skarbonka Internetowa, która sprawi że Twój płynny budżet będzie mniej płynny. Zacznij już dzisiaj korzystać z naszych usług, pierwszy semestr gratis!</h5></Col>
-    <Col><img className="img" src={image1} alt="Pesos" />;</Col>
+    <Col><img className="img" src={image1} alt="Pesos" /></Col>
   </Row>
   <Row>
     <Col>1 of 3</Col>

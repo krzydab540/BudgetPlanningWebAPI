@@ -5,13 +5,18 @@ import Header from './Header.js';
 
 import Body from './Body.js';
 import Fotter from './Fotter.js';
-//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-//import Fotter2 from './Fotter2.js';
+
+/*
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Login from'./Login';
+import SignUp from'./Login';
+import Fotter2 from './Fotter2.js';
 
 //<Fotter2/>
 
-/*
+
 function App() {
     return (<Router>
       <div className="App">
@@ -46,18 +51,13 @@ function App() {
   
   export default App;
 
-
 */
 
 
 
-
-
-
-
-
-
 export default () =>
+
+
 
 <div ><Header /> 
 <Body className="Body"/>

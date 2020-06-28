@@ -23,7 +23,7 @@ const columns = [{
     dataField: 'productPrice',
     text: 'Cena Produktu',
     sort: true
-  }];
+}];
 
   //function addProducts(quantity) {
   //  const startId = products.length;
@@ -39,7 +39,7 @@ const columns = [{
   // return products
   //}
 
-export default function Fetcher({ url }) {
+export default function Fetcher({ url },props) {
   const [data, setData] = useState([null]);
    
   //const lightOn = () =>
@@ -133,21 +133,7 @@ export default function Fetcher({ url }) {
     );
   };
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  //data.push({ //productID: 2,
-        //productName: 'Item name ' + 1,
-        //productPrice: 2100 + 4
-    //   });
-
-       
+        
   useEffect(
     () => {
       // Start it off by assuming the component is still mounted
@@ -175,6 +161,7 @@ export default function Fetcher({ url }) {
   }
 
   return <div class="row justify-content-center"><BootstrapTable class="table table-bordered table-striped text-center" bootstrap4   keyField='id' data={data} columns={ columns } />
+ 
  
  <SignupForm/>
   </div>;

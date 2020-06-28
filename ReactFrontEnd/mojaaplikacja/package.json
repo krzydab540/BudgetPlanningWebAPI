@@ -2,6 +2,7 @@
   "name": "mojaaplikacja",
   "version": "0.1.0",
   "private": true,
+  "javascript.validate.enable": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -9,6 +10,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "formik": "^2.1.4",
+    "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-bootstrap-table-next": "^4.0.0",
@@ -16,7 +18,8 @@
     "react-dom": "^16.13.1",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-token-auth": "^1.1.7"
   },
   "scripts": {
     "start": "set PORT=3006 && react-scripts start",
