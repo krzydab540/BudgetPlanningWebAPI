@@ -8,7 +8,7 @@ class Fotter extends React.Component {
 
 render(){
 return(<div >
- <div className="App-fotter"><ha>Fotter </ha></div>
+ <div className="App-fotter">Fotter </div>
  
  </div>);
 //<Menu/>
