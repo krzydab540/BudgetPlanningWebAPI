@@ -8,7 +8,7 @@ class Fotter extends React.Component {
 
 render(){
 return(<div >
- <div className="App-fotter">Fotter </div>
+ <div className="App-fotter"><h5>	KrzyDAb and FilWar 2020 &copy; </h5></div>
  
  </div>);
 //<Menu/>

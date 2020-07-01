@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import isEqual from 'lodash/isEqual';
-//import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-//import React from "react";
-//import ReactDOM from "react-dom";
 import { useFormik } from "formik";
-//import "./styles.css";
 import "./App.css";
-
 import Table13 from "./Table13";
-
 import Gradient1 from "./Gradient1";
 import Gradient2 from "./Gradient12";
-
-///import TableForm2 from './TableForm2';
-//import Table2 from './Table2';
-//import TableForm from './TableForm';
-//import Table3 from './Table3';
 import Home from "./Home";
 import Nav from "./Nav";
 import {
@@ -27,19 +16,14 @@ import {
 
 let encodedString;
 
-//let token2 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1enl0a293bmlrIiwiZW1haWwiOiJ0ZXN0QHRlc3QucGwiLCJqdGkiOiIyMDNiMzgzNC1iYzQ1LTRhZmItODk2YS03ZGQ5NjVlNDA3MzEiLCJleHAiOjE1OTI1MTM2OTcsImlzcyI6ImtyenlzenRvZmRhYnJvd3NraS5wbCIsImF1ZCI6ImtyenlzenRvZmRhYnJvd3NraS5wbCJ9.v0X4V8dQXVQoty3B93srZzK1BFvo6r1VkliKbd1btqo" ;
 
-//var decoded = JWT(token2);
-//console.log(decoded);
 
 export default function Fetcher({ url }) {
   const [data1, setData1] = useState([null]);
   const [data2, setData2] = useState();
   
   const [data3, setData3] = useState({ token: "" }); //{token: ''}
-  //let [token, setToken] = useState("");
   
-  //console.log("token 123",token123)
   const validate = (values) => {
     const errors = {};
 
@@ -81,20 +65,7 @@ export default function Fetcher({ url }) {
             const token = res.data.token;
             setData3({ token });
           });
-          // We have a response, but let's first check if component is still mounted
-          //console.log('https://localhost:44351/api/Login?encrypted=' + encodedString)
-          //console.log(JSON.stringify(response.data.token))
-          // console.log("odczyt odpowiedzi");
-          //console.log(response.data)
-          /* 
-        setTimeout(() => {
-          setData2({token: JSON.stringify(response.data.token)})
-          console.log("timeout");
-          console.log(data2);
-          console.log("//////////////");
-        }, 1000);
-        return(JSON.stringify(response.data.token))
-        */
+          
         };
         loadData(encodedString);
         console.log(loadData(encodedString));

@@ -23,7 +23,7 @@ export default () =>
     <Col>3 of 3</Col>
   </Row>
 </Container>
-<div className="Home">Tututu</div>
+
 
 </div>
   

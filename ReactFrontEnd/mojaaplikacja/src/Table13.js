@@ -2,13 +2,9 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import BootstrapTable from "react-bootstrap-table-next";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
-//import React from "react";
-//import ReactDOM from "react-dom";
 import { useFormik } from "formik";
 import "./styles.css";
 import "./App.css";
-
-//let products = [];
 
 const columns = [
   {
@@ -75,7 +71,7 @@ export default function Fetcher(props) {
           headers: {
             Authorization: `Bearer ${props.value.token}`,
           },
-          productID: values.productID,
+          //productID: values.productID,
           productName: values.productName,
           productPrice: values.productPrice,
         });
@@ -129,7 +125,7 @@ export default function Fetcher(props) {
     );
   };
 
-  useEffect(() => {
+  const update33 = () => {
     // Start it off by assuming the component is still mounted
     let mounted = true;
 
@@ -150,7 +146,11 @@ export default function Fetcher(props) {
       // When cleanup is called, toggle the mounted variable to false
       mounted = false;
     };
-  });
+  };
+
+  useEffect(() => {
+    update33();
+  }, []);
 
   if (!data) {
     return <div>Loading data from </div>;
